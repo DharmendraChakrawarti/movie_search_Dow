@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div class = "wrapper">
+        <!-- logo -->
+        <div class = "logo">
+            <div class = "container">
+                <p>Movie<span>Searchkaro.</span></p>
+            </div>
+        </div>
+        <!-- end of logo -->
+        <!-- search container -->
+        <div class = "search-container">
+            <div class = "search-element">
+                <h3>Search Movie:</h3>
+                <input type = "text" class = "form-control" placeholder="Search Movie Title ..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+
+                <div class = "search-list" id = "search-list">
+                    <!-- list here -->
+                    <!-- <div class = "search-list-item">
+                        <div class = "search-item-thumbnail">
+                            <img src = "dc.jpg">
+                        </div>
+                        <div class = "search-item-info">
+                            <h3>Dharmendra Chakrawarti</h3>
+                            <p>DC</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div> 
+        <!-- end of search container -->
+
+        <!-- result container -->
+        <div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
+                    <!-- movie information here -->
+                     <div class = "movie-poster">
+                        <img src = "dc.jpg" alt = "movie poster">
+                    </div>
+                    <div class = "movie-info">
+                        <h3 class = "movie-title">Dharmendra Chakrawarti</h3>
+                        <ul class = "movie-misc-info">
+                            <li class = "year">Born : 9 jun 2002</li>
+                            <li class = "rated">Nick name : DC</li>
+                            <li class = "released">age : 20 year old</li>
+                        </ul>
+                        <p class = "genre"><b>Hobby</b> study, gaming, Drawing</p>
+                        <p class = "writer"><b>mobile number:</b> 6265045410 ,7611175061</p>
+                        <p class = "actors"><b>add: </b> devgaon ,post hirdenagar</p>
+                        <p class = "plot"><b>Plot:</b> hello friends i am DC i am from mandla dist . presently i am persuing B-tech form Computer Science for paisa k liye friends byy frnds</p>
+                        <p class = "language"><b>Language:</b> hindi ,English</p>
+                        <p class = "awards"><b><i class = "fas fa-award"></i></b> DC power</p>
+                        <a class="sa" href="dw/download.html"><button class="btn" >Download</button></a>
+                        
+                            
+                        
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!-- end of result container -->
+    </div>
+
+
+    <!-- movie app js -->
+    <script src = "script.js"></script>
+</body>
+</html>
